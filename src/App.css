@@ -1,103 +1,176 @@
 * {
-  box-sizing: border-box;
-}
-
-body, #root {
-  background-color: #1b17f7;
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 80vh;
-  margin: 0;
-  overflow: hidden;
-}
-.header-title {
-  color: #c80808;
-  font-size: 80px;
-  font-family:Arial, sans-serif;
-}
-
-.header-description {
-  color: #666;
-  font-size: 14px;
-}
-h1 {
-  margin: 20px 0 0;
-}
-
-.game-container {
-  padding: 20px 30px;
-  position: relative;
-  margin: auto;
-  height: 350px;
-  width: 450px;
-}
-
-.figure-container {
-  fill: transparent;
-  stroke: #fff;
-  stroke-width: 4px;
-  stroke-linecap: round;
-}
-
-.figure-part {
-  display: none;
-}
-
-.wrong-letters-container {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-}
-
-.wrong-letters-container p {
-  margin: 0 0 5px;
-}
-
-.wrong-letters-container span {
-  font-size: 24px;
-}
-
-.word {
-  display: flex;
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.letter {
-  border-bottom: 3px solid #2980b9;
-  display: inline-flex;
-  font-size: 30px;
-  align-items: center;
-  justify-content: center;
-  margin: 0 3px;
-  height: 50px;
-  width: 20px;
-}
+    box-sizing: border-box;
+  }
+  
+  body, #root {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Hangman-5.svg/1024px-Hangman-5.svg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; 
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    align-items: left;
+    height: 80vh;
+    margin: 0;
+    
+  }
+  
+  h1 {
+    margin: 20px 0 0;
+  }
 
 
-.notification-container {
-  color: #c80808;
-  background-color: rgb(253, 253, 253);
-  border-radius: 10px 10px 0 0;
-  padding: 15px 20px;
-  position: absolute;
-  bottom: -50px;
-  transition: transform 0.3s ease-in-out;
-  font-family: Arial, sans-serif;
-}
+  .game-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 200px;
+    font-size: 20px;
+    position: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .title{
+    font-size: 80px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 60px;
+    color: #820411;
+  }
+  .header-title{
+    font-size: 80px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 80px;
+    color: #820411
+  }
+  .header-description{
+    margin-top: -40px;
+    margin-left: 80px;
+    color: #820411;
 
-.notification-container p {
-  margin: 0;
-}
+  }
+    .figure-container {
+    fill: transparent;
+    stroke: hsl(0, 0%, 0%);
+    stroke-width: 10px;
+    stroke-linecap: round;
+    margin-left: -50px;
+  }
+  
+  .figure-part {
+    display: none;
+  }
+  .word {
+    display: flex;
+    position: absolute;
+    top: 799px;
+    left: 65%;
+    transform: translateX(-80%);
+    
+  }
+  .wrong-letters-container {
+    color:#820411;
+    position: absolute;
+    top: 400px;
+    left: 150px;
+    display: right;
+    flex-direction: column;
+    text-align: right;
+  }
+  
+  .wrong-letters-container p {
+    margin: 0 0 5px;
+  }
+  
+  .wrong-letters-container span {
+    font-size: 24px;
+  }
+  .letter {
+    color:#820411;
+    border-bottom: 3px solid #000000;
+    display: inline-flex;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3px;
+    height: 50px;
+    width: 20px;
+    padding: 15px
+  }
+  
+  .cheater{
+    color:#000000
+  }
+ .cheater-button{
+    display: inline-block;
+    padding: 5px 10px;
+    position: relative; /* Add this line */
+    top: 10px;
+    left: 85px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #820411;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+ }
+  .home-form{
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #000000;
+    border: 1px solid #820411;
+    border-width: 5px;
+    border-radius: 10px;
+    left: 200px;
+    top: 100px;
+  }
+  .start-button {
+    display: inline-block;
+    padding: 15px 100px;
+    position: relative; /* Add this line */
+    left: 140px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #820411;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .start-button:hover{
+    background-color: #820411;
+  transform: scale(1.05);
+  }
 
-.notification-container.show {
-  transform: translateY(-50px);
-}
+  .submit-button{
+    display: inline-block;
+    padding: 5px 10px;
+    position: relative; /* Add this line */
+    top: 10px;
+    left: 85px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #820411;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  .h3{
+    font-size: 20px;
+    color: #820411;
+  }
+ 
+  .link{
+    color: #820411 
+  }

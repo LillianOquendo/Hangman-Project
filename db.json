@@ -1,0 +1,40 @@
+{
+  "userName": [
+    {
+      "id": 1,
+      "name": "Player"
+    }
+  ],
+  "leaderBoard": [
+    {
+      "id": 2,
+      "name": "Jason",
+      "highscore": 2020
+    },
+    {
+      "id": 3,
+      "name": "Lillian",
+      "highscore": 2021
+    },
+    {
+      "id": 4,
+      "name": "Tyler",
+      "highscore": 2022
+    },
+    {
+      "id": 5,
+      "name": "Eleanor",
+      "highscore": 2023
+    },
+    {
+      "id": 6,
+      "name": "Santa Claus",
+      "highscore": 2024
+    },
+    {
+      "name": "lillian",
+      "highscore": "20000000",
+      "id": 7
+    }
+  ]
+}

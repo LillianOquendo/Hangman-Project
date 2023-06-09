@@ -6,7 +6,7 @@ const WrongLetters = ({ wrongLetters }) => {
       const formattedLetters = wrongLetters.join(', ');
       return (
         <div>
-          <p>Wrong</p>
+          <p>Wrong Letters</p>
           <span>{formattedLetters}</span>
         </div>
       );
