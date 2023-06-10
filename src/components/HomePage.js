@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Form from "./Form";
-import NavBar from "./NavBar";
-//import "./HP.css"
 
-function HomePage() {
+
+function HomePage({setPlayable}) {
+  setPlayable(false)
   const [submittedName, setSubmittedName] = useState("");
   const navigate = useNavigate();
 

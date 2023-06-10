@@ -6,7 +6,8 @@ import Word from './Word';
 
 
 
-function GamePage({selectedWord, correctLetters, wrongLetters}) {
+function GamePage({selectedWord, correctLetters, wrongLetters, setPlayable}) {
+  setPlayable(true)
   return (
     <div>
      

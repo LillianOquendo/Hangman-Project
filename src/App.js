@@ -14,7 +14,7 @@ import HomePage from './components/HomePage';
 import GamePage from './components/GamePage';
 import NavBar from './components/NavBar';
 import Leaderboard from './components/LeaderBoard';
-import './App.css';
+import './Ap.css';
 
 
 
@@ -60,8 +60,7 @@ function App() {
 
     window.addEventListener('keydown', keyPress);
     return () => window.removeEventListener('keydown', keyPress);
-  }, [correctLetters, wrongLetters, playable, selectedWord]);
-
+}, [correctLetters, wrongLetters, playable, selectedWord]);
 
   return (
     <div className='game-container'>
@@ -71,12 +70,14 @@ function App() {
       <BrowserRouter>
       <NavBar/>
         <Routes>
-          <Route path='/' element={<HomePage />}/>
+          <Route path='/' element={<HomePage setPlayable={setPlayable}/>}/>
           <Route path='/game' element={<GamePage 
           selectedWord={selectedWord}
           correctLetters={correctLetters}
-          wrongLetters={wrongLetters}/>}/>
-        <Route path="/leaderboard" element={<Leaderboard />} />
+          wrongLetters={wrongLetters}
+          setPlayable={setPlayable}/>}/>
+
+        <Route path="/leaderboard" element={<Leaderboard setPlayable={setPlayable} />} />
         </Routes>
       </BrowserRouter>
 

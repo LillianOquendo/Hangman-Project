@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 
-const Leaderboard = () => {
+const Leaderboard = ({setPlayable}) => {
+  setPlayable(false)
   const [players, setPlayers] = useState([]);
 
   useEffect(() => {
@@ -90,7 +91,7 @@ const Leaderboard = () => {
     <div>
    
       <h2 classname='leaderboard-title'style={{color:'#820411'}}>Leaderboard</h2>
-      <ol>
+      <ol style={{color:'#000000'}}>
         {players.map((player) => (
           <li key={player.id}>
           <span style={{ color: '#a20515' }}>{player.name}:</span> <span style={{ color: '#000000' }}>{player.highscore}</span>
