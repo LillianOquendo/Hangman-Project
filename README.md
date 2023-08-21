@@ -2,6 +2,7 @@
 
 This is a Hangman game web application built using React. It allows players to guess a word by suggesting letters within a limited number of attempts. The game features a user-friendly interface, leaderboard, and the option to add new players to the Cheater's Corner.
 
+![header](https://github.com/LillianOquendo/Hangman-Project-Phase-2/blob/main/media/Hangman_gif.gif)
 ## Features
 
 - Interactive hangman game with a visually appealing design.
