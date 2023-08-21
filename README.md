@@ -1,6 +1,6 @@
 # Hangman Game
 
-This is a Hangman game web application built using React. It allows players to guess a word by suggesting letters within a limited number of attempts. The game features a user-friendly interface, leaderboard, and the option to add new players.
+This is a Hangman game web application built using React. It allows players to guess a word by suggesting letters within a limited number of attempts. The game features a user-friendly interface, leaderboard, and the option to add new players to the Cheater's Corner.
 
 ## Features
 
@@ -27,7 +27,10 @@ npm install
 
 npm start
 
-5. Open your browser and visit http://localhost:3000 to view the application.
+5. Watch the json server
+npx json-server --watch db.json
+
+6. Open your browser and visit http://localhost:3000 to view the application.
 
 - Enter your name and highscore in the provided form to add yourself to the leaderboard.
 - Click on the "Game" link in the navigation to play the Hangman game.
