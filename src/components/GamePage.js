@@ -10,7 +10,7 @@ function GamePage({selectedWord, correctLetters, wrongLetters, setPlayable}) {
   setPlayable(true)
   return (
     <div>
-     
+    
       <Header />
       <Figure wrongLetters={wrongLetters} />
       <WrongLetters wrongLetters={wrongLetters}/>

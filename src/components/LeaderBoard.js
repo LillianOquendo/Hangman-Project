@@ -52,8 +52,9 @@ const Leaderboard = ({setPlayable}) => {
     };
 
     return (
-      <form onSubmit={handleSubmit} >
-         <br></br>
+      <form onSubmit={handleSubmit}
+      autoComplete = "off">
+        <br></br>
         <h3 className='cheater' >Cheaters Corner!</h3>
         <h4 style={{ color: '#820411' }}>Input your name and highscore 
           <br></br>
@@ -89,7 +90,7 @@ const Leaderboard = ({setPlayable}) => {
 
   return (
     <div>
-   
+
       <h2 classname='leaderboard-title'style={{color:'#820411'}}>Leaderboard</h2>
       <ol style={{color:'#000000'}}>
         {players.map((player) => (

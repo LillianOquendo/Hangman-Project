@@ -7,11 +7,6 @@
   ],
   "leaderBoard": [
     {
-      "id": 2,
-      "name": "Jason",
-      "highscore": 2020
-    },
-    {
       "id": 3,
       "name": "Lillian",
       "highscore": 2021
@@ -27,9 +22,9 @@
       "highscore": 2023
     },
     {
-      "id": 6,
-      "name": "Santa Claus",
-      "highscore": 2024
+      "name": "lillian #2",
+      "highscore": "1,000,000",
+      "id": 6
     }
- ]
+  ]
 }

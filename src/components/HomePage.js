@@ -20,7 +20,7 @@ function HomePage({setPlayable}) {
 
   return (
     <section id="home">
-     
+    
       <h1 className="title">HANGMAN</h1>
       <br />
       <div>
